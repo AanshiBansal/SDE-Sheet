@@ -11,9 +11,9 @@
  * };
  */
  
- //Recursive
- //Space: Auxillary Array O(n)
- //Time: O(n)
+//Recursive
+//Space: Auxillary Array O(n)
+//Time: O(n)
 class Solution {
 public:
     void inorderRecursive(TreeNode* root, vector<int>&inorder){
@@ -54,9 +54,9 @@ public:
     }
 };
 
- //Morris Traversal
- //Space: O(1)
- //Time: O(n)
+//Morris Traversal
+//Space: O(1)
+//Time: O(n)
 class Solution {
 public:
     vector<int> inorderTraversal(TreeNode* root) {
