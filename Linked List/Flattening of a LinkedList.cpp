@@ -1,4 +1,4 @@
-struct Node{
+/*struct Node{
 	int data;
 	struct Node * next;
 	struct Node * bottom;
@@ -11,8 +11,6 @@ struct Node{
 	
 };
 */
-
-//Time O(m*n)
 
 Node* merge(Node* first, Node* second){
     Node* ans=new Node(0);
@@ -33,6 +31,9 @@ Node* merge(Node* first, Node* second){
         curr->bottom=second;
     return ans->bottom;
 }
+
+//Time: O(m*n*n) == O(1*m + 2*m + 3*m + .... + (n-1)*m) where m is the average length of sub-linked-lists
+//Space: O(n)
 Node *flatten(Node *root)
 {
     if(root==NULL)
@@ -44,6 +45,8 @@ Node *flatten(Node *root)
     return root;
 }
 
+//Time: O(m*n*n)
+//Space: O(1)
 Node *flatten(Node *root)
 {
     Node* curr=root;
