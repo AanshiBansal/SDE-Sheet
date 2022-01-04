@@ -1,3 +1,6 @@
+//2-Pointer Approach
+//Time: O(n^2)
+//Space: O(n) Auxiliary Array because of sorting
 class Solution {
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
