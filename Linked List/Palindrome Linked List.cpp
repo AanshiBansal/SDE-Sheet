@@ -9,8 +9,8 @@
  * };
  */
 
-Time: O(n)
-Space: O(n)
+//Time: O(n)
+//Space: O(n)
 class Solution {
 public:
     bool isPalindrome(ListNode* head) {
