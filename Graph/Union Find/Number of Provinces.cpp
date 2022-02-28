@@ -1,3 +1,4 @@
+// Union Find/ Disjoint Set works only on undirected graph
 //Base Version
 // Time: find and union function takes O(n) is worst case
 // The trees created to represent subsets can be skewed and can become like a linked list.
