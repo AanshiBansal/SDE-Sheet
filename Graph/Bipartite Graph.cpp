@@ -1,0 +1,1 @@
+// Graph with odd length cycle is not Bipartite otherwise it is
