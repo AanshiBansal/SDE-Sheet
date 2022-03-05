@@ -3,35 +3,29 @@
 // Space: O(V)
 class Solution {
   private:
-    bool dfs(vector<int> adj[], vector<bool>&vis,  vector<bool>&currVis, int node, int parent){
+    bool dfs(vector<int> adj[], vector<bool>&vis, int node, int parent){
         for(int neighbor: adj[node]){
             if(neighbor!=parent){
-                if(currVis[neighbor])
+                if(vis[neighbor])
                     return true;
                 vis[neighbor]=true;
-                currVis[neighbor]=true;
-                int res=dfs(adj, vis, currVis, neighbor, node);
+                int res=dfs(adj, vis, neighbor, node);
                 if(res)
                     return true;
-                currVis[neighbor]=false;
             }
         }
         return false;
     }
   public:
     bool isCycle(int V, vector<int> adj[]) {
-        // code here
         if(V==0)
             return false;
         vector<bool>vis(V,false);
-        vector<bool>currVis(V,false);
         for(int i=0;i<V;i++){
             if(vis[i]==false){
                 vis[i]=true;
-                currVis[i]=true;
-                if(dfs(adj,vis,currVis,i,-1))
+                if(dfs(adj,vis,i,-1))
                     return true;
-                currVis[i]=false;
             }
         }
         return false;
