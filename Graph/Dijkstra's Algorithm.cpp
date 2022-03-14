@@ -1,7 +1,9 @@
 // Undirected
 // weighted
+// No negative edges
 // Cycle is fine but not with negative weight cycles
 
+// Greedy Algorithm
 // Time: O((N+E)*log(N))
 // Space: O(N)
 class Solution
