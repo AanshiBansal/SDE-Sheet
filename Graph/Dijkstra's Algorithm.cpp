@@ -1,7 +1,7 @@
 // Undirected
 // weighted
 // No negative edges
-// Cycle is fine but not with negative weight cycles
+// Cycle is fine
 
 // Greedy Algorithm
 // Time: O((N+E)*log(N))

@@ -1,3 +1,7 @@
+// Dynamic Programming
+// All Pairs Shortest Path problem
+// Weighted
+// Directed
 class Solution {
   public:
 	void shortest_distance(vector<vector<int>>&matrix){
