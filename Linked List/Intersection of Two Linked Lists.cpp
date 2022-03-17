@@ -7,7 +7,7 @@
  * };
  */
  
-//Time: o(m+n)
+//Time: O(m+n)
 //Space: O(min(m,n))
 class Solution {
 public:

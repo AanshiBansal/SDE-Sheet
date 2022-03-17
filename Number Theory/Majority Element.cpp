@@ -1,5 +1,7 @@
 //Time: O(n)
 //Space: O(1)
+//  Boyer-Moore Voting Algorithm
+
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
