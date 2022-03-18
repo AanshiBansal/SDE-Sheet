@@ -1,3 +1,5 @@
+// Time: O(log(n)*log(M*10^d))
+
 double power(double m, int n){
     if(n==1)
         return m;
