@@ -3,20 +3,17 @@
 class Solution {
 public:
     void nextPermutation(vector<int>& nums) {
-        int i=nums.size()-1;
-        for(;i>0;i--){
-            if(nums[i]>nums[i-1]){
-                break;
-            }
+        int i=nums.size()-2;
+        while(i>=0 && nums[i]>=nums[i+1]){
+            i--;
         }
-        if(i!=0){
-            for(int j=nums.size()-1;j>i-1;j--){
-                if(nums[j]>nums[i-1]){
-                    swap(nums[j],nums[i-1]);
-                    break;
-                }
+        int j=i+1;
+        if(i>=0){
+            while(j<nums.size() && nums[j]>nums[i]){
+                j++;
             }
+            swap(nums[i],nums[j-1]);
         }
-        reverse(nums.begin()+i,nums.end());
+        reverse(nums.begin()+i+1,nums.end());
     }
 };
