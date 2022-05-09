@@ -17,7 +17,6 @@ class Solution {
   public:
     // Function to return a list containing the DFS traversal of the graph.
     vector<int> dfsOfGraph(int V, vector<int> adj[]) {
-        // Code here
         vector<int>dfs;
         if(V==0)
             return dfs;

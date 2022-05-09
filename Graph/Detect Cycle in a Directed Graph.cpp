@@ -18,7 +18,6 @@ class Solution {
   public:
     // Function to detect cycle in a directed graph.
     bool isCyclic(int V, vector<int> adj[]) {
-        // code here
         if(V==0)
             return false;
         vector<bool>vis(V,false);

@@ -2,7 +2,7 @@
 //Can be solved by DFS as well
 //Time: O(m*n) Total nodes
 //Space: O(m*n) Total nodes
-//Space and Time complexity will be same in case of DFS as wll
+//Space and Time complexity will be same in case of DFS as well
 class Solution {
 public:
     vector<vector<int>> floodFill (vector<vector<int>>image, int sr, int sc, int newColor){
