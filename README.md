@@ -10,7 +10,7 @@ set<datatype, greater<datatype>> setname; // descending order
 <li>The set stores the elements in sorted order.</li>
 <li>All the elements in a set have unique values.</li>
 <li>The value of the element cannot be modified once it is added to the set, though it is possible to remove and then add the modified value of that element. Thus, the values are immutable.</li>
-<li><b>Sets follow the Binary search tree implementation.</b></li>
+<li>**Sets follow the Binary search tree implementation.**</li>
 <li>The values in a set are unindexed.</li>
 </ol>
 
