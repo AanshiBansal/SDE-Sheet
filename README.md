@@ -7,7 +7,7 @@ set<datatype> setname; // ascending order
 
 set<datatype, greater<datatype>> setname; // descending order
 
-### Properties:
+#### Properties:
 <ol>
 <li>The set stores the elements in sorted order.</li>
 <li>All the elements in a set have unique values.</li>
@@ -16,7 +16,7 @@ set<datatype, greater<datatype>> setname; // descending order
 <li>The values in a set are unindexed.</li>
 </ol>
 
-### Some Basic Functions Associated with Set: 
+#### Some Basic Functions Associated with Set: 
 <ul>
 <li>begin() – Returns an iterator to the first element in the set.</li>
 <li>end() – Returns an iterator to the theoretical element that follows the last element in the set.</li>
